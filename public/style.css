@@ -5,12 +5,25 @@
   }
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  margin: 0;
+
   font: 400 100%/1.65 "Helvetica Neue", Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
 
   color: white;
   background-color: #007954;
+
+  overflow-x: hidden;
+}
+
+.wf-loading .webfont {
+  visibility: hidden
 }
 
 .outer {
@@ -25,15 +38,19 @@ body {
 }
 
 .sign {
-  width: 7em;
-
   font-family: "expressway", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.5em;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle
+}
+
+@media screen and (min-device-width: 481px) {
+  .sign {
+    font-size: 3em;
+  }
 }
 
 .sign p {
@@ -68,14 +85,9 @@ body {
 }
 
 .is-up .status {
-  color: #007954;
+  color: #090;
 }
 
 .is-down .status {
   color: #c00;
 }
-
-.wf-loading .webfont {
-  visibility: hidden
-}
-
