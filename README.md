@@ -1,0 +1,4 @@
+uptime
+======
+
+Uptime page
