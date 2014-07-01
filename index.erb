@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link href='/style.css' rel='stylesheet'>
+
+    <script type="text/javascript">
+    (function(d) {
+      var config = {
+        kitId: 'suq4ney',
+        scriptTimeout: 3000
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  </head>
+  <body class='is-<%= locals[:status] %>'>
+    <div class='outer'>
+      <div class='inner'>
+        <div class='sign'>
+          <p class='webfont'>
+            This website
+            has worked
+            <strong><%= locals[:days_since_downtime] %></strong> days
+            without downtime.
+          </p>
+        </div>
+        <div class='current'>
+          <p class='webfont'>
+            Currently <strong class='status'><%= locals[:status] %></strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

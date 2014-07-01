@@ -1,0 +1,81 @@
+@media screen and (max-device-width: 480px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+}
+
+body {
+  font: 400 100%/1.65 "Helvetica Neue", Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+
+  color: white;
+  background-color: #007954;
+}
+
+.outer {
+  display: table;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.sign {
+  width: 7em;
+
+  font-family: "expressway", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 3em;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle
+}
+
+.sign p {
+  margin: 0;
+}
+
+.sign strong {
+  display: inline-block;
+
+  min-width: 2em;
+  padding: 0 0.5em;
+
+  line-height: 1.25em;
+  background-color: white;
+  color: #222;
+}
+
+.current {
+  margin-top: 2em;
+
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.current p {
+  display: inline-block;
+
+  padding: 0.5em 1em;
+
+  background-color: white;
+  color: black;
+}
+
+.is-up .status {
+  color: #007954;
+}
+
+.is-down .status {
+  color: #c00;
+}
+
+.wf-loading .webfont {
+  visibility: hidden
+}
+
