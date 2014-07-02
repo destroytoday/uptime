@@ -17,9 +17,16 @@ body {
   text-rendering: optimizeLegibility;
 
   color: white;
-  background-color: #007954;
 
   overflow-x: hidden;
+}
+
+.is-up {
+  background-color: #007954;
+}
+
+.is-down {
+  background-color: #c00;
 }
 
 .wf-loading .webfont {
@@ -35,21 +42,20 @@ body {
 .inner {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 }
 
 .sign {
-  font-family: "expressway", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 2em;
-  line-height: 1.5em;
+  font-family: "gnuolane", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 3em;
+  line-height: 1.125em;
   letter-spacing: 2px;
   text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle
 }
 
-@media screen and (min-device-width: 481px) {
+@media screen and (min-width: 481px) {
   .sign {
-    font-size: 3em;
+    font-size: 4em;
   }
 }
 
@@ -58,36 +64,41 @@ body {
 }
 
 .sign strong {
+  position: relative;
+  top: -0.25em;
+
   display: inline-block;
 
-  min-width: 2em;
-  padding: 0 0.5em;
+  min-width: 2.5em;
+  padding: 0 0.25em;
 
+  font-size: 0.625em;
   line-height: 1.25em;
+  text-align: right;
   background-color: white;
   color: #222;
 }
 
-.current {
+.message {
+  display: inline-block;
+  padding: 0 0.625em;
   margin-top: 2em;
 
-  font-size: 0.875em;
-  text-align: center;
-}
+  font-style: italic;
+  text-transform: uppercase;
 
-.current p {
-  display: inline-block;
-
-  padding: 0.5em 1em;
-
+  border-radius: 4px;
   background-color: white;
-  color: black;
 }
 
-.is-up .status {
-  color: #090;
+.is-up .message {
+  color: #007954;
 }
 
-.is-down .status {
+.is-down .message {
   color: #c00;
+}
+
+.message p {
+  margin: 0;
 }

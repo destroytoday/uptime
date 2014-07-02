@@ -25,20 +25,19 @@
   </head>
   <body class='is-<%= locals[:status] %>'>
     <div class='outer'>
-      <div class='inner'>
+      <div class='inner webfont'>
         <div class='sign'>
-          <p class='webfont'>
+          <p>
             This website<br>
             has worked<br>
             <strong><%= locals[:days_since_downtime] %></strong> days<br>
             without<br>
-            downtime.
+            a lost time<br>
+            accident
           </p>
         </div>
-        <div class='current'>
-          <p class='webfont'>
-            Currently <strong class='status'><%= locals[:status] %></strong>
-          </p>
+        <div class='message'>
+          <p>Downtime is avoidable</p>
         </div>
       </div>
     </div>
